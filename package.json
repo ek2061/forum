@@ -4,13 +4,26 @@
   "private": true,
   "description": "React App",
   "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.8.0",
+    "@mui/material": "^5.8.0",
+    "@reduxjs/toolkit": "^1.8.1",
+    "lodash": "^4.17.21",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-redux": "^8.0.1",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
+    "redux-logger": "^3.0.6"
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:dev": "env-cmd -e dev npm run start",
     "build": "react-scripts build",
+    "build:prod": "env-cmd -e prod npm run build",
     "test": "react-scripts test",
+    "test:test": "env-cmd -e test npm run test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
