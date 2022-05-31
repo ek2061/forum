@@ -3,12 +3,16 @@ import { lazy } from "react";
 import { Navigate } from "react-router-dom";
 
 const Login = Suspense(lazy(() => import("./pages/Login")));
+const HomePage = Suspense(lazy(() => import("./pages/HomePage")));
 const NotFoundPage = Suspense(lazy(() => import("./pages/NotFoundPage")));
 
 export const routers = [
   {
     path: "/",
-    element: <Navigate to="/login" replace={true} />,
+    element: <HomePage />,
+    // children: [
+    //   { path: "/f", element: <Navigate to="" replace={true} /> },
+    // ]
   },
   {
     path: "/login",
