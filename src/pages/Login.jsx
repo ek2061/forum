@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import { styled } from "@mui/system";
 import SignInWave from "assets/SignInWave.png";
 import React from "react";
-import { LoginForm } from "./LoginForm";
+import { LoginForm } from "../views/Login/LoginForm";
 
 const BackgroundImage = styled("div")(({ theme }) => ({
   backgroundColor: "#093545",

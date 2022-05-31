@@ -1,8 +1,7 @@
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import LockIcon from "@mui/icons-material/Lock";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import MuiButton from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import { styled } from "@mui/system";
 import { HorizontalCenter } from "components/Horizontal";
 import { TextInput } from "components/TextInput";
@@ -91,7 +90,7 @@ export const LoginForm = () => {
         <Typography variant="body1" align="right">
           Forgot Password?
         </Typography>
-        <Link to="/funding" style={{ textDecoration: "none" }}>
+        <Link to="/" style={{ textDecoration: "none" }}>
           <LoginButton sx={{ my: 2 }}>Login</LoginButton>
         </Link>
       </FormBox>
