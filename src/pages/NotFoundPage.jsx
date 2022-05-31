@@ -34,7 +34,7 @@ export default function NotFoundPage() {
             We can`t seem to find the page you are looking for
           </Typography>
           <br />
-          <Link to="/funding" style={{ textDecoration: "none" }}>
+          <Link to="/" style={{ textDecoration: "none" }}>
             <Button variant="contained" color="success" size="large">
               Home
             </Button>
