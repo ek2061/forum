@@ -15,7 +15,7 @@ export const Tabs = (props) => {
   return (
     <Box sx={{ width: "100%", typography: "body1" }}>
       <TabContext value={value}>
-        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+        <Box sx={{ borderBottom: 1, borderColor: "divider", mb: "5px" }}>
           <TabList
             onChange={handlerChange}
             centered={props.centered}
@@ -33,7 +33,7 @@ export const Tabs = (props) => {
                     borderRadius: "5px 5px 0px 0px",
                     minHeight: "48px",
                     width: "210px",
-                    marginRight: "6px",
+                    mr: "6px",
                   }}
                 />
               );
