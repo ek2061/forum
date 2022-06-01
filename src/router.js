@@ -1,4 +1,5 @@
 import Suspense from "components/Suspense";
+import Board from "pages/Board";
 import { lazy } from "react";
 import { Navigate } from "react-router-dom";
 
@@ -10,9 +11,10 @@ export const routers = [
   {
     path: "/",
     element: <HomePage />,
-    // children: [
-    //   { path: "/f", element: <Navigate to="" replace={true} /> },
-    // ]
+    children: [
+      { path: "", element: <Navigate to="/board" replace={true} /> },
+      { path: "/board", element: <Board /> },
+    ],
   },
   {
     path: "/login",

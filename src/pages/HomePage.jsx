@@ -3,7 +3,6 @@ import NavBar from "layouts/Navbar";
 import Sidebar from "layouts/Sidebar";
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Board from "./Board";
 
 const Root = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.background.default,
@@ -34,7 +33,6 @@ export default function HomePage() {
       <Wrapper>
         <Container>
           <Outlet />
-          <Board />
         </Container>
       </Wrapper>
     </Root>
