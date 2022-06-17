@@ -5,6 +5,7 @@ import { Navigate } from "react-router-dom";
 
 const Login = Suspense(lazy(() => import("./pages/Login")));
 const HomePage = Suspense(lazy(() => import("./pages/HomePage")));
+const PostPage = Suspense(lazy(() => import("./pages/PostPage")));
 const NotFoundPage = Suspense(lazy(() => import("./pages/NotFoundPage")));
 
 export const routers = [
@@ -14,6 +15,7 @@ export const routers = [
     children: [
       { path: "", element: <Navigate to="/board" replace={true} /> },
       { path: "/board", element: <Board /> },
+      { path: "/post", element: <PostPage /> },
     ],
   },
   {
