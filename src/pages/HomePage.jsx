@@ -1,7 +1,5 @@
 import { styled } from "@mui/system";
 import NavBar from "layouts/Navbar";
-import Sidebar from "layouts/Sidebar";
-import React from "react";
 import { Outlet } from "react-router-dom";
 
 const Root = styled("div")(({ theme }) => ({
@@ -29,7 +27,6 @@ export default function HomePage() {
   return (
     <Root>
       <NavBar />
-      <Sidebar />
       <Wrapper>
         <Container>
           <Outlet />
