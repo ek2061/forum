@@ -6,11 +6,13 @@ import {
 // import logger from "redux-logger";
 import { apiSlice } from "./api";
 import { appSlice } from "./app";
+import { boardSlice } from "./board";
 import { loginSlice } from "./login";
 
 const reducer = combineReducers({
   app: appSlice.reducer,
   login: loginSlice.reducer,
+  board: boardSlice.reducer,
   [apiSlice.reducerPath]: apiSlice.reducer,
 });
 
