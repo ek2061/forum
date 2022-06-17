@@ -32,7 +32,8 @@ export const Tabs = (props) => {
                   sx={{
                     borderRadius: "5px 5px 0px 0px",
                     minHeight: "48px",
-                    width: "210px",
+                    maxWidth: "210px",
+                    width: "50%",
                     mr: "6px",
                   }}
                 />
