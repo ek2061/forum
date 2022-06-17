@@ -89,7 +89,7 @@ export default function PostPage() {
       </ListItemButton>
       <Collapse in={open} timeout="auto" unmountOnExit>
         {data.map((comment, index) => (
-          <Comment {...comment} floor={index + 1} />
+          <Comment {...comment} floor={index + 1} key={index} />
         ))}
       </Collapse>
     </>
